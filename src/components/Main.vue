@@ -7,8 +7,11 @@ export default {
 
 
 <template>
+
+  <div class="container">
+    <h1>questo è il main</h1>
+  </div>
   
-  <h1>questo è il main</h1>
 
 </template>
 
