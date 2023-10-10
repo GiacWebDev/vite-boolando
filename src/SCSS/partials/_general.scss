@@ -1,0 +1,23 @@
+// imposto le caratteristiche generali dello style della pagina
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container {
+  width: $container-width;
+  margin: auto;
+}
+
+.debug {
+  border: 1px solid black;
+}
+
+ul li {
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}
