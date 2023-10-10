@@ -1,11 +1,17 @@
 // inserire i colori dei vari testi e dimesioni
 
-@use './variables';
+@use './variables' as *;
 
-// h4{
-//   color: $text-primary-color;
-// }
 
-// h3{
-//   color: $text-secondary-color;
-// }
+body {
+  font-family: $primary-font;
+}
+
+h4{
+  color: $text-primary-color;
+}
+
+h3{
+  color: $text-secondary-color;
+}
+
