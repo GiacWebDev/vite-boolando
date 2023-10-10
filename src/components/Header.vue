@@ -9,7 +9,7 @@ export default {
 <template>
 
 <header>
-  <div class="left debug">
+  <div class="left">
     <div class="menu">
       <ul>
         <li><a href="#">Donna</a></li>
@@ -26,9 +26,11 @@ export default {
   
   <div class="right">
     <div class="icons">
-      icona
-      icona
-      
+      <ul>
+        <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+        <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
     </div>
   </div>
   
@@ -55,7 +57,7 @@ header {
 
 ul li {
   display: inline-block;
-  padding: 5px;
+  padding: 5px 8px;
 }
 
 a {

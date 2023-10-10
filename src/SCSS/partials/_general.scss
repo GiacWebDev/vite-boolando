@@ -1,5 +1,5 @@
 // imposto le caratteristiche generali dello style della pagina
-@use './variables' as *;
+@import './variables';
 
 * {
   padding: 0;
@@ -20,5 +20,6 @@ ul li {
   list-style: none;
   a {
     text-decoration: none;
+    color: white;
   }
 }
