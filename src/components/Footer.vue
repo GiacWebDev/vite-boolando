@@ -8,16 +8,16 @@ export default {
 
 <template>
   <footer>
-    <div class="container debug-w">
+    <div class="container">
 
-      <div class="fot-left debug-w">
+      <div class="left">
         <h3>Boolando S.r.l</h3>
         <span><a href="#">Informazioni legali</a></span>
         <span><a href="#">Informativa sulla privacy</a></span>
         <span><a href="#">Diritto di recesso</a></span>
       </div>
 
-      <div class="fot-right">
+      <div class="right">
         <h3>Trovaci anche su</h3>
         <div class="social">
           <ul>
@@ -48,6 +48,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.left,
+.right {
+  margin: 0;
 }
 
 .social ul {
