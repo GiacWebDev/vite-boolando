@@ -45,7 +45,7 @@ export default {
             <li
             v-for="(item,index) in social_menu,header"
             :key="index">
-              <a :href="item.href"><i class="fa-regular" :class="item.icon_class" ></i></a>
+              <a :href="item.href"><i :class="item.icon_class" ></i></a>
             </li>
           </ul>
   
