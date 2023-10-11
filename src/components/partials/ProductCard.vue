@@ -7,6 +7,8 @@ export default {
   props: {
     primaryImage: String,
     secondaryImage: String,
+    discount: String,
+    sostenibilita: String,
     marca: String,
     modello: String,
     fullPrice: String,
@@ -23,10 +25,10 @@ export default {
 
       <div class="banner">
         <div class="red-discount">
-          <p>-30%</p>
+          <p>{{ discount }}</p>
         </div>
         <div class="green">
-          <p>Sostenibilità</p>
+          <p>{{ sostenibilita }}</p>
         </div>
       </div>
       <div class="heart">

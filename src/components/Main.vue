@@ -28,6 +28,8 @@ export default {
       :key="product.id"
       :primaryImage="product.primaryImage"
       :secondaryImage="product.secondaryImage"
+      :discount="product.discount"
+      :sostenibilita="product.sostenibilita"
       :marca="product.marca"
       :modello="product.modello"
       :fullPrice="product.fullPrice"
