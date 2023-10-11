@@ -2,6 +2,8 @@
 <script>
 export default {
 
+  name: 'ProductCard'
+
 }
 </script>
 

@@ -1,8 +1,16 @@
 <script>
 
-export default {
-  nome: 'Header',
+import { main_menu, social_menu } from '../data/menus';
 
+export default {
+
+  nome: 'Header',
+  data() {
+    return {
+      main_menu,
+      social_menu
+    }
+  }
 }
 </script>
 
@@ -17,9 +25,10 @@ export default {
             <!-- colonna sinistra header  -->
         <div class="menu-header centered">
           <ul>
-            <li><a href="#">Donna</a></li>
-            <li><a href="#">Uomo</a></li>
-            <li><a href="#">Bambini</a></li>
+            <li 
+            v-for="(item, index) in main_menu"
+            :key="index"
+            ><a :href="item.href">{{ item.text }}</a></li>
           </ul>
         </div>
   
@@ -32,14 +41,11 @@ export default {
         <div class="list-header centered">
   
           <ul>
-            <li>
-              <a href="#"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+            <!-- prendo .header perche l'oggetto social_menu ha due array di oggetti uno per header e uno footer  -->
+            <li
+            v-for="(item,index) in social_menu,header"
+            :key="index">
+              <a :href="item.href"><i class="fa-regular" :class="item.icon_class" ></i></a>
             </li>
           </ul>
   

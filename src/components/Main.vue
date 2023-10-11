@@ -3,10 +3,13 @@ import ProductCard from './partials/ProductCard.vue';
 import products from '../data/products';
 
 export default {
+
   nome: 'Main',
   components: {
     ProductCard
+
   },
+  
   data() {
     return {
       products
