@@ -13,6 +13,22 @@ const main_menu = [
   },
 ];
 
+const footer_menu = [
+  {
+    href: "#",
+    text: "Informazioni legali",
+  },
+  {
+    href: "#",
+    text: "Informativa sulla privacy",
+  },
+  {
+    href: "#",
+    text: "Diritto di recesso",
+  },
+];
+
+// questa variabile di oggetti sotto ha al suo interno due array -header -footer richiamabili con "social_menu.header / footer"
 const social_menu = {
   header: [
     {
@@ -44,7 +60,7 @@ const social_menu = {
     },
     {
       href: "#",
-      icon_class: "ffa-square-pinterest",
+      icon_class: "fa-square-pinterest",
     },
     {
       href: "#",
@@ -53,4 +69,4 @@ const social_menu = {
   ],
 };
 
-export { main_menu, social_menu };
+export { main_menu, social_menu, footer_menu };

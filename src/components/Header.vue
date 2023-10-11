@@ -43,9 +43,9 @@ export default {
           <ul>
             <!-- prendo .header perche l'oggetto social_menu ha due array di oggetti uno per header e uno footer  -->
             <li
-            v-for="(item,index) in social_menu,header"
-            :key="index">
-              <a :href="item.href"><i :class="item.icon_class" ></i></a>
+              v-for="(item, index) in social_menu.header"
+              :key="index">
+              <a :href="item.href"><i :class="item.icon_class"></i></a>
             </li>
           </ul>
   
