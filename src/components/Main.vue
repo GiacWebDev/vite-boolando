@@ -6,8 +6,7 @@ export default {
 
   nome: 'Main',
   components: {
-    ProductCard
-
+    ProductCard,
   },
   
   data() {
@@ -24,7 +23,12 @@ export default {
 
   <div class="container">
 
-    <ProductCard v-for="product in products" :key="product.id"/>
+    <ProductCard 
+      v-for="product in products" 
+      :key="product.id"
+      :primaryImage="product.primaryImage"
+      :secondaryImage="product.secondaryImage"
+      />
     
   </div>
   
