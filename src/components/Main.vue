@@ -28,6 +28,10 @@ export default {
       :key="product.id"
       :primaryImage="product.primaryImage"
       :secondaryImage="product.secondaryImage"
+      :marca="product.marca"
+      :modello="product.modello"
+      :fullPrice="product.fullPrice"
+      :lastPrice="product.lastPrice"
       />
     
   </div>
