@@ -5,14 +5,7 @@ export default {
   name: 'ProductCard',
   // creo un props con tutte le caratteristiche che avrà il prodotto = card per inserirle dinamicamente
   props: {
-    primaryImage: String,
-    secondaryImage: String,
-    discount: String,
-    sostenibilita: String,
-    marca: String,
-    modello: String,
-    fullPrice: String,
-    lastPrice: String
+    productObj: Object
   }
 }
 </script>
@@ -20,15 +13,15 @@ export default {
 <template>
   <div class="card">
     <div class="top">
-      <img :src="primaryImage" :alt="modello" class="image-prod">
-      <img :src="secondaryImage" :alt="modello" class="img-hover">
+      <img :src="productObj.primaryImage" :alt="productObj.modello" class="image-prod">
+      <img :src="productObj.secondaryImage" :alt="productObj.modello" class="img-hover">
 
       <div class="banner">
         <div class="red-discount">
-          <p>{{ discount }}</p>
+          <p>{{ productObj.discount }}</p>
         </div>
         <div class="green">
-          <p>{{ sostenibilita }}</p>
+          <p>{{ productObj.sostenibilita }}</p>
         </div>
       </div>
       <div class="heart">
@@ -36,10 +29,10 @@ export default {
       </div>
     </div>
     <div class="bottom">
-      <p>{{ marca }}</p>
-      <h2>{{ modello }}</h2>
-      <p><span class="price">{{ fullPrice }}</span>
-        <span class="discount">{{ lastPrice }}</span></p>
+      <p>{{ productObj.marca }}</p>
+      <h2>{{ productObj.modello }}</h2>
+      <p><span class="price">{{ productObj.fullPrice }}</span>
+        <span class="discount">{{ productObj.lastPrice }}</span></p>
     </div>
   </div>
 </template>
